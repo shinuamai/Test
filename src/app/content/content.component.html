@@ -1,0 +1,33 @@
+<form action="" class="grid grid-rows-4 grid-flow-col gap-4 p-20">
+    <div class="space-x-3 ">
+        <label for="idPersona">ID Persona</label>
+        <input type="text" name="idPersona" id="idPersona" class="border-solid border-2 rounded-lg border-black w-1/2" [(ngModel)]="editInfo.idPersona">
+    </div>
+    <div class="space-x-3 ">
+        <label for="documento">Documento</label>
+        <input type="number" name="documento" id="documento" class="border-solid border-2  rounded-lg border-black w-1/2" [(ngModel)]="editInfo.documento">
+    </div>
+    <div class="space-x-3 ">
+        <label for="nombres">Nombres</label>
+        <input type="text" name="nombres" id="nombres" class="border-solid border-2  rounded-lg border-black w-1/2" [(ngModel)]="editInfo.nombres">
+    </div>
+    <div class="space-x-3 ">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" class="border-solid border-2  rounded-lg border-black w-1/2" [(ngModel)]="editInfo.apellidos">
+    </div>
+    <div class="space-x-3 ">
+        <label for="telefono">Telefono</label>
+        <input type="number" name="telefono" id="telefono" class="border-solid border-2  rounded-lg border-black w-1/2" [(ngModel)]="editInfo.telefono">
+    </div>
+    <div class="space-x-3 ">
+        <label for="correo">Correo</label>
+        <input type="text" name="correo" id="correo" class="border-solid border-2  rounded-lg border-black w-1/2" [(ngModel)]="editInfo.correo">
+    </div>
+    <div class="space-x-3 ">
+        <label for="direccion">Direccion</label>
+        <input type="text" name="direccion" id="direccion" class="border-solid border-2  rounded-lg border-black w-1/2" [(ngModel)]="editInfo.direccion">
+    </div>
+    <div>
+        <button type="button" class="bg-blue-400 border-solid border-2 rounded-lg px-5 py-2" (click)="postInfo()">Save</button>
+    </div>
+</form>
